@@ -1,3 +1,156 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: 'Norse1';
+    src: url('fonts/norse/Norse.woff2') format('woff2'),
+        url('fonts/norse/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/norse/Norse-Bold.woff2') format('woff2'),
+        url('fonts/norse/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    /* background-color: red; */
+    margin: 0;
+    display: flex;
+    font-family: 'Arial';
+}
+
+/* Left column styles */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    height: 100vh;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.left-column p {
+    color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 153px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+}
+
+.credits {
+    align-self: center;
+}
+
+.banner p {
+    font-family: 'Norse1', 'Arial';
+    align-self: center;
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.banner img {
+    margin: 15px 15px;
+}
+
+.left-column a {
+    color: white;
+}
+
+/* Right column styles */
+.first-row {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: large;
+    background-color: #f4f1f1;
+}
+
+.first-row p {
+    margin: 10vh;
+    margin-right: 50vh;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: column;
+    margin: 4vh;
+    padding-bottom: 3vh;
+    box-shadow: 0px 3.5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.second-row h2 {
+    margin-left: 2vh;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+
+.form-row {
+    display: flex;
+    margin: 2vh;
+    justify-content: start;
+    gap: 6vh;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 25vh;
+    height: 2vh;
+    border: solid #E5E7EB;
+    border-width: 3px;
+}
+
+input:focus {
+    border: solid rgb(132, 132, 250);
+    outline: none;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+input:user-invalid {
+    border: solid orange;
+    outline: none;
+}
+
+.third-row {
+    display: flex;
+    background-color: #f4f1f1;
+    flex-direction: column;
+    padding: 4vh 0vh 12vh 6vh;
+}
+
+button {
+    width: 20vh;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.third-row a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
